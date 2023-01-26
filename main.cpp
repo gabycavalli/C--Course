@@ -55,7 +55,6 @@ int main()
     else
         cout<<"el mayor es: "<<num2<<endl;*/
 
-
     /*5. Dados dos valores numéricos, informar cual es el mayor y cual es el menor o si ambos valores son iguales emitir un mensaje.*/
 
     // int num3 = 18;
@@ -82,7 +81,7 @@ int main()
     // else
     //     cout<<"Las fechas son iguales"<<endl;
 
-    // 7. Dado un triángulo representado por sus lados lado1, lado2 y lado3, determinar e indicar según corresponda: “equilátero”, “isósceles” o “escálenos”. 
+    // 7. Dado un triángulo representado por sus lados lado1, lado2 y lado3, determinar e indicar según corresponda: “equilátero”, “isósceles” o “escálenos”.
 
     // int lado1 = 28;
     // int lado2 = 23;
@@ -99,6 +98,7 @@ int main()
     // 8. Dados un mes y el año al que corresponde, informar cuantos días tiene el mes.
 
     // int mes = 2;
+    // int anio = 2020;
 
     // switch (mes)
     // {
@@ -109,30 +109,47 @@ int main()
     // case 4: case 6: case 9: case 11:
     //     printf("El Mes ingresado tiene 30 dias");
     //     break;
-    // case 2: printf("El Febrero puede tener 28 o 29 dias si el anio es bisiesto");
-        
+    // case 2: 
+    //         if(anio%4==0) 
+    //             cout<<"Este anio es bisiesto y Febrero tiene 29 dias"<<endl;
+    //         else
+    //             cout<<"Febrero tiene 28 dias"<<endl;
+    //     break;
     // default:
     //     printf("Ingreso un mes incorrecto");
     //     break;
     // }
 
-    //9. Se ingresa una edad, mostrar por pantalla alguna de las siguientes leyendas: 
-        // “menor” si la edad es menor o igual a 12
-        // “cadete” si la edad está comprendida entre 13 y 18,
-        // “juvenil” si la edad es mayor que 18 y no supera los 26, y
-        // “mayor” si no cumple ninguna de las condiciones anteriores. 
+    // 9. Se ingresa una edad, mostrar por pantalla alguna de las siguientes leyendas:
+    //  “menor” si la edad es menor o igual a 12
+    //  “cadete” si la edad está comprendida entre 13 y 18,
+    //  “juvenil” si la edad es mayor que 18 y no supera los 26, y
+    //  “mayor” si no cumple ninguna de las condiciones anteriores.
 
-        int edad = 27;
+         // int edad = 27;
 
-        if(edad<=12) 
-            cout<<"La edad ingresada corresponde a un Menor"<<endl;
-        if (edad>=13 && edad<=18)
-            cout<<"La edad ingresada corresponde a un cadete"<<endl;
-        if(edad>=19 && edad<=26)
-            cout<<"La edad ingresada corresponde a un Juvenil"<<endl;
-        if(edad>26)
-            cout<<"La edad ingresada corresponde a un Mayor"<<endl;         
-   
+         // if (edad <= 12)
+        //     cout << "La edad ingresada corresponde a un Menor" << endl;
+        //  if (edad >= 13 && edad <= 18)
+        //     cout << "La edad ingresada corresponde a un cadete" << endl;
+        //  if (edad >= 19 && edad <= 26)
+        //     cout << "La edad ingresada corresponde a un Juvenil" << endl;
+        //  if (edad > 26)
+        //     cout << "La edad ingresada corresponde a un Mayor" << endl;
+
+    // 10. Dados dos valores numéricos enteros, calcular e informar su producto mediante sumas sucesivas. 
+
+        int multiplicando = 8; // 2 x 5 = 10 
+        int multiplicador = 8;
+        int producto = 0;
+
+        for(int i = 0; i < multiplicando; i++){
+
+             producto = producto + multiplicador;
+        }           
+
+        cout<<"El producto es: "<<producto<<endl;
+
 
 
     return 0;
