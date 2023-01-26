@@ -2,6 +2,36 @@
 #include <iostream>
 using namespace std;
 
+void imprimirNro(int numero){
+                           
+
+        switch (numero)
+        {
+
+        case 1: printf("UNO \n");
+            break;
+        case 2: printf("DOS \n");
+            break; 
+        case 3: printf("TRES \n");
+            break; 
+        case 4: printf("CUATRO \n");
+            break; 
+        case 5: printf("CINCO \n");
+            break;
+        case 6: printf("SIES \n");
+            break;
+        case 7: printf("SIETE \n");
+            break;        
+        case 8: printf("OCHO \n");
+            break; 
+        case 9: printf("NUEVE \n");
+            break;                 
+        default:
+            printf("INGRESASTE UN NUMERO MAYOR A NUEVE \n");
+            break;
+    }
+}
+
 int main()
 {
 
@@ -139,16 +169,38 @@ int main()
 
     // 10. Dados dos valores numéricos enteros, calcular e informar su producto mediante sumas sucesivas. 
 
-        int multiplicando = 8; // 2 x 5 = 10 
-        int multiplicador = 8;
-        int producto = 0;
+        // int multiplicando = 8; // 2 x 5 = 10 
+        // int multiplicador = 8;
+        // int producto = 0;
 
-        for(int i = 0; i < multiplicando; i++){
+        // for(int i = 0; i < multiplicando; i++){
 
-             producto = producto + multiplicador;
-        }           
+        //      producto = producto + multiplicador;
+        // }           
 
-        cout<<"El producto es: "<<producto<<endl;
+        // cout<<"El producto es: "<<producto<<endl;
+
+        //Complementario A:
+            //imprimirNro(5);
+
+        //Complementario B:
+
+        // imprimir del a - b
+            
+            int a = 1;
+            int b = 20;
+        
+        for(int i = a; i<=b; i++){
+
+            if(i>9){
+                   if(i%2==0){
+                       cout<<"PAR"<<endl; 
+                   } else
+                        cout<<"IMPAR"<<endl;
+            }
+            else
+                imprimirNro(i);
+        }       
 
 
 
