@@ -29,39 +29,47 @@ int main()
     Dado valor numérico entero que se ingresa por teclado, se pide informar:
         1)La quinta parte de dicho valor
         2)El resto de la división por 5
-    3)La séptima parte de la quinta parte.
+        3)La séptima parte de la quinta parte.
     */
 
-    int num = 505;
+    /*int num = 505;
     int quinta = 0;
     int septima = 0;
     int resto = 0;
 
-    // ingresar por teclado el numero.
-
-    // cout<<"Ingrese numero:"<<endl;
-    // cin>>num;
-
-    // hallar la 5ta parte de num
-
     quinta = (num / 5);
-
-    // hallar el resto
-
     resto = (num % 5);
-
-    // hallar la septima de la quinta
-
     septima = (quinta / 7);
 
     cout << "La quinta parte de " << num << " es: " << quinta << endl;
     cout << "La septima parte de la quinta parte de " << quinta << " es: " << septima << endl;
-    cout << "El resto de la division de num por 5 es: " << resto << endl;
+    cout << "El resto de la division de num por 5 es: " << resto << endl;*/
 
     // 4. Dados dos valores numéricos diferentes entre si, informar cual es el mayor.
-    // 5. Dados dos valores numéricos, informar cual es el mayor y cual es el menor o,
-    //    si ambos valores son iguales emitir un mensaje.
-    // 6. Dadas dos fechas, informar cual es la más reciente. Determinar cuales deben ser los datos de entrada y en que formato los debe ingresar el usuario
+
+    /*int num1 = 18;
+    int num2 = 15;
+
+    if(num1>num2)
+        cout<<"el mayor es: "<<num1<<endl;
+    else
+        cout<<"el mayor es: "<<num2<<endl;*/
+
+
+    /*5. Dados dos valores numéricos, informar cual es el mayor y cual es el menor o si ambos valores son iguales emitir un mensaje.*/
+
+    int num3 = 18;
+    int num4 = 15;
+
+    if(num3>num4)
+        cout<<"el mayor es: "<<num3<<endl;
+    else
+        if(num3<num4)
+            cout<<"el mayor es: "<<num4<<endl;
+    else
+        cout<<"Los numeros son iguales"<<endl;
+
+    // 6. Dadas dos fechas, informar cual es la más reciente. Determinar cuales deben ser los datos de entrada y en que formato los debe ingresar el usuario.
 
     return 0;
 }
