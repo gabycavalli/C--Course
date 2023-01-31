@@ -2,33 +2,42 @@
 #include <iostream>
 using namespace std;
 
-void imprimirNro(int numero){
-                           
+void imprimirNro(int numero)
+{
 
-        switch (numero)
-        {
+    switch (numero)
+    {
 
-        case 1: printf("UNO \n");
-            break;
-        case 2: printf("DOS \n");
-            break; 
-        case 3: printf("TRES \n");
-            break; 
-        case 4: printf("CUATRO \n");
-            break; 
-        case 5: printf("CINCO \n");
-            break;
-        case 6: printf("SIES \n");
-            break;
-        case 7: printf("SIETE \n");
-            break;        
-        case 8: printf("OCHO \n");
-            break; 
-        case 9: printf("NUEVE \n");
-            break;                 
-        default:
-            printf("INGRESASTE UN NUMERO MAYOR A NUEVE \n");
-            break;
+    case 1:
+        printf("UNO \n");
+        break;
+    case 2:
+        printf("DOS \n");
+        break;
+    case 3:
+        printf("TRES \n");
+        break;
+    case 4:
+        printf("CUATRO \n");
+        break;
+    case 5:
+        printf("CINCO \n");
+        break;
+    case 6:
+        printf("SIES \n");
+        break;
+    case 7:
+        printf("SIETE \n");
+        break;
+    case 8:
+        printf("OCHO \n");
+        break;
+    case 9:
+        printf("NUEVE \n");
+        break;
+    default:
+        printf("INGRESASTE UN NUMERO MAYOR A NUEVE \n");
+        break;
     }
 }
 
@@ -139,8 +148,8 @@ int main()
     // case 4: case 6: case 9: case 11:
     //     printf("El Mes ingresado tiene 30 dias");
     //     break;
-    // case 2: 
-    //         if(anio%4==0) 
+    // case 2:
+    //         if(anio%4==0)
     //             cout<<"Este anio es bisiesto y Febrero tiene 29 dias"<<endl;
     //         else
     //             cout<<"Febrero tiene 28 dias"<<endl;
@@ -156,53 +165,175 @@ int main()
     //  “juvenil” si la edad es mayor que 18 y no supera los 26, y
     //  “mayor” si no cumple ninguna de las condiciones anteriores.
 
-         // int edad = 27;
+    // int edad = 27;
 
-         // if (edad <= 12)
-        //     cout << "La edad ingresada corresponde a un Menor" << endl;
-        //  if (edad >= 13 && edad <= 18)
-        //     cout << "La edad ingresada corresponde a un cadete" << endl;
-        //  if (edad >= 19 && edad <= 26)
-        //     cout << "La edad ingresada corresponde a un Juvenil" << endl;
-        //  if (edad > 26)
-        //     cout << "La edad ingresada corresponde a un Mayor" << endl;
+    // if (edad <= 12)
+    //     cout << "La edad ingresada corresponde a un Menor" << endl;
+    //  if (edad >= 13 && edad <= 18)
+    //     cout << "La edad ingresada corresponde a un cadete" << endl;
+    //  if (edad >= 19 && edad <= 26)
+    //     cout << "La edad ingresada corresponde a un Juvenil" << endl;
+    //  if (edad > 26)
+    //     cout << "La edad ingresada corresponde a un Mayor" << endl;
 
-    // 10. Dados dos valores numéricos enteros, calcular e informar su producto mediante sumas sucesivas. 
+    // 10. Dados dos valores numéricos enteros, calcular e informar su producto mediante sumas sucesivas.
 
-        // int multiplicando = 8; // 2 x 5 = 10 
-        // int multiplicador = 8;
-        // int producto = 0;
+    // int multiplicando = 8; // 2 x 5 = 10
+    // int multiplicador = 8;
+    // int producto = 0;
 
-        // for(int i = 0; i < multiplicando; i++){
+    // for(int i = 0; i < multiplicando; i++){
 
-        //      producto = producto + multiplicador;
-        // }           
+    //      producto = producto + multiplicador;
+    // }
 
-        // cout<<"El producto es: "<<producto<<endl;
+    // cout<<"El producto es: "<<producto<<endl;
 
-        //Complementario A:
-            //imprimirNro(5);
+    // Complementario A:
+    // imprimirNro(5);
 
-        //Complementario B:
+    // Complementario B:
 
-        // imprimir del a - b
-            
-            int a = 1;
-            int b = 20;
-        
-        for(int i = a; i<=b; i++){
+    // imprimir del a - b
 
-            if(i>9){
-                   if(i%2==0){
-                       cout<<"PAR"<<endl; 
-                   } else
-                        cout<<"IMPAR"<<endl;
+    int a = 1;
+    int b = 20;
+
+    for (int i = a; i <= b; i++)
+    {
+
+        if (i > 9)
+        {
+            if (i % 2 == 0)
+            {
+                cout << "PAR" << endl;
             }
             else
-                imprimirNro(i);
-        }       
+                cout << "IMPAR" << endl;
+        }
+        else
+            imprimirNro(i);
+    }
+
+    /*11. Se ingresa un conjunto de valores reales, cada uno de los cuales representan el sueldo de un empleado, excepto el último valor que será 0 para indicar el fin del ingreso de datos.
+    Se pide desarrollar un programa que determine e informe:  Cuántos empleados ganan menos $2000.  Cuántos ganan $2000 o más pero menos de $3000.
+    Cuántos ganan $3000 o más pero menos de $5000.  Cuántos ganan $5000 o más. */
+
+           /*float less2 = 0;
+       float less3 = 0;
+       float less5 = 0;
+       float more5 = 0;
+       float salary = 1;
+
+       cout<<"Ingrese el salario: "<<endl;
+        cin>>salary;
+
+       while(salary!=0){
+
+            if(salary<2000){
+                less2=less2+1;
+            }
+            if(salary>=2000 && salary<3000){
+                less3 = less3+1;
+            }
+            if(salary>=3000 && salary<5000){
+                less5 = less5+1;
+            }
+            if(salary>=5000){
+                more5 = more5+1;
+            }
+
+            cin>>salary;
+       }
+
+            cout<<"Los que ganan menos de $2000 son: "<<less2<<endl;
+            cout<<"Los que ganan mas de $2000 y menos de $3000 son: "<<less3<<endl;
+            cout<<"Los que ganan entre $3000 y $5000 son: "<<less5<<endl;
+            cout<<"Los que ganan 5000 o mas de $5000 son: "<<more5<<endl;*/
+
+       /*ejercicio 12
+        Dado un valor num�rico entero m, determinar e imprimir un listado con los m primeros m�ltiplos de 3 que no sean m�ltiples de 5.*/
 
 
+        //int m = 0;
+        //int i = 0;
+
+        /*
+        cout<<"Ingrese cantidad de multiplos: "<<endl;
+        cin >> m;
+        for (int i = 1; i <= m; i++) {
+        int multiplo = 3 * i;
+        if (multiplo % 5 != 0) {
+            cout << multiplo << endl;
+            }
+        }
+        */
+
+        /*cout<<"Ingrese cantidad de multiplos: "<<endl;
+        cin >> m;
+        while(i < m){
+
+        int multiplo = 3 * i;
+        if (multiplo % 5 != 0) {
+         cout << multiplo << endl;
+            }else{
+            m++;
+            }
+            i++;
+        }*/
+
+    /*ejercicio 13
+    Dados 10 valores numéricos, informar cual es el mayor. */
+
+
+    /*int num = 0;
+    int mayor = 0;
+    int arr[10] = {10,100,200,600,15,21,23,0,0,3};
+    // Ingreso los 10 numeros
+
+    for(int i=0;i<10;i++){
+         if(arr[i] > mayor){
+           mayor = arr[i];
+        }
+
+    }
+
+    cout<<"El numero mayor de tu ingreso fue: "<<mayor<<endl;*/
+
+
+
+    /*ejercicio 14
+    Dados n valores numéricos, informar el mayor, el menor y en que posición del conjunto fueron ingresados cada uno de ellos. */
+
+    int num = 0;
+    int mayor = 0;
+    int menor =0;
+    int posmax = 0;
+    int posmin = 0;
+
+
+    cout<<"Por favor ingrese 10 numeros: "<<endl;
+    cin>>num;
+    mayor = menor = num;
+
+    for(int i=0;i<9;i++){
+
+        if(num > mayor){
+           mayor = num;
+           posmax = i;
+           }
+
+        if(num < menor){
+            menor = num;
+            posmin = i;
+            }
+
+        cin>>num;
+
+    }
+
+    cout<<"El numero mayor de tu ingreso fue: "<<mayor<<" en la posicion: "<<posmax<<endl;
+    cout<<"El numero menor de tu ingreso fue: "<<menor<<" en la posicion: "<<posmin<<endl;
 
     return 0;
 }
