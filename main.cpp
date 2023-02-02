@@ -118,8 +118,7 @@ float calcularPorcentajeDiferencia(){
 }
 
 
-int main()
-{
+int main() {
 
     /* Ejercicio1:
 
