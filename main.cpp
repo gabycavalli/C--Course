@@ -100,25 +100,12 @@ void esBoolean(){
      }
 }
 
-float calcularPorcentajeDiferencia(){
-        long a=0;
-        long b =0;
-        long porcentaje = 0;
 
-        cout<<"Ingrese A: "<<endl;
-        cin>>a;
-
-        cout<<"Ingrese B: "<<endl;
-        cin>>b;
-
-        porcentaje = (b-a)*100 / (a+b);
-
-        cout<<"el porcentaje diferencia es: "<<porcentaje<<endl;
-
-}
 
 
 int main() {
+
+
 
     /* Ejercicio1:
 
@@ -427,7 +414,7 @@ int main() {
      // Desarrolle la función calcularPorcentajeDiferencia que recibe dos valores a, b y retorna el siguiente cálculo: (b-a) *100 / (a+b). El prototipo será: float calcularPorcentajeDiferencia(long a, long b);
 
 
-        //calcularPorcentajeDiferencia();
+        calcularPorcentajeDiferencia();
 
 
     return 0;
