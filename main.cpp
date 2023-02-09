@@ -396,25 +396,56 @@ int main() {
     cout<<"El numero mayor de tu ingreso fue: "<<mayor<<" en la posicion: "<<posmax<<endl;
     cout<<"El numero menor de tu ingreso fue: "<<menor<<" en la posicion: "<<posmin<<endl;*/
 
-    /*ejercicio 15
-     Dado un conjunto de nombres y fechas de nacimiento con formato ddmmaaaa, que finaliza cuando se ingrese un nombre igual a “fin”, informar el nombre de la persona con mayor edad y el de la más joven. */
+
+     //Dado un conjunto de nombres y fechas de nacimiento con formato ddmmaaaa, que finaliza cuando se ingrese un nombre igual a “fin”, informar el nombre de la persona con mayor edad y el de la más joven. */
 
 
      //mostrarMatorMenorEdad();
 
 
-
-     // ejercicio 16
      // Desarrollar la función esMultiplo que recibe dos valores a y b y retorna true o false según a sea o no múltiplo de b. El prototipo será: bool esMultiplo(int a, int b);
 
         //esBoolean();
 
 
-     // ejercicio 17
      // Desarrolle la función calcularPorcentajeDiferencia que recibe dos valores a, b y retorna el siguiente cálculo: (b-a) *100 / (a+b). El prototipo será: float calcularPorcentajeDiferencia(long a, long b);
 
 
-        calcularPorcentajeDiferencia();
+        //calcularPorcentajeDiferencia();
+
+    // Write a program in C to find the maximum and minimum element in an array
+
+        //busqueda_max_min();
+
+    // Write a program in C to print all unique elements in an array.
+
+        // unique_elements();
+
+    //Write a program in C to count the frequency of each element of an array.
+
+        //frecuency();
+
+    // Write a program in C to separate odd and even integers in separate arrays.
+
+        //par_impar();
+
+    // Write a program in C to sort elements of array in ascending order
+
+        // ascending_sort();
+
+    //Write a program in C to print the individual characters from a string.(console display)
+
+
+
+    // Write a program in C to print individual characters of string in reverse order
+
+        // descending_sort();
+
+
+
+
+
+
 
 
     return 0;
