@@ -427,7 +427,7 @@ int main() {
 
     // Write a program in C to separate odd and even integers in separate arrays.
 
-        //par_impar();
+        par_impar();
 
     // Write a program in C to sort elements of array in ascending order
 
