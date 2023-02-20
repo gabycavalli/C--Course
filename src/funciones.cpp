@@ -193,7 +193,19 @@ int descending_sort(){
 
     }
 
+}
 
+int count_words(){
+
+    string frase = "hola como estas vos";
+        int cant = 0;
+        for (int i = 0; i < frase.length() ; ++i) {
+            if((frase[i]==' ' && frase[i+1]!=' ')){
+                cant=cant+1;
+                }
+            }
+    cout<<"La cantidad de palabras que hay es: "<<cant+1<<endl;
 
 
 }
+

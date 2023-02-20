@@ -1,5 +1,6 @@
 #include "include/funciones.h"
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 void imprimirNro(int numero)
@@ -427,7 +428,7 @@ int main() {
 
     // Write a program in C to separate odd and even integers in separate arrays.
 
-        par_impar();
+        //par_impar();
 
     // Write a program in C to sort elements of array in ascending order
 
@@ -440,6 +441,31 @@ int main() {
     // Write a program in C to print individual characters of string in reverse order
 
         // descending_sort();
+
+    //Write a program in C to count the total number of words in a string
+
+        //count_words();
+
+    //Write a program in C to find the length of a string without using library function.
+
+
+
+   string palabra = "hola";
+   int cont = 0;
+   //int i=0;
+
+   while(palabra[cont]!= 0){
+
+        cont++;
+
+   }
+   cout<<"El largo del string es: "<<cont<<endl;
+
+
+
+   //cout<<"EL LARGO DEL STRING ES: "<<palabra.size()<<endl;
+   //cout<<"EL LARGO DEL STRING ES: "<<palabra.length()<<endl;
+
 
 
 

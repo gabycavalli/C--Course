@@ -7,3 +7,4 @@ int frecuency();
 int par_impar();
 int ascending_sort();
 int descending_sort();
+int count_words();
