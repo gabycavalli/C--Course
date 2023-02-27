@@ -104,6 +104,7 @@ void esBoolean(){
 
 
 
+
 int main() {
 
 
@@ -449,29 +450,42 @@ int main() {
     //Write a program in C to find the length of a string without using library function.
 
 
-
-   string palabra = "hola";
-   int cont = 0;
-   //int i=0;
-
-   while(palabra[cont]!= 0){
-
-        cont++;
-
-   }
-   cout<<"El largo del string es: "<<cont<<endl;
+        //length_of_array();
 
 
 
-   //cout<<"EL LARGO DEL STRING ES: "<<palabra.size()<<endl;
-   //cout<<"EL LARGO DEL STRING ES: "<<palabra.length()<<endl;
+    /*33. Desarrolle una estructura que guarde los datos de los n alumnos de la materia programación en Lenguaje C,
+    y los muestres por pantalla, la estructura debe tener (dni, nombre, apellido, edad, profesión, lugar de nacimiento, dirección y teléfono)*/
+
+
+    // listado_alumnos();
+
+    /*34. Desarrolle un arreglo de estructura para un programa que lea una lista de alumnos y las notas correspondientes a una determinada asignatura;
+    el resultado será el tanto por ciento(porcentaje) de los alumnos aprobados y reprobados*/
+
+    /*----PUNTEROS--------*/
+    //Imprimir el valor y su dirección de memoria de una variable.
+
+        int p = 50;
+        cout<<"La direccion de memoria de p es: "<<&p<<endl;
+        cout<<"El valor de p es: "<<p<<endl;
+        cout<<endl;
+
+    //Asignar memoria de un tipo de dato primitivo y liberar la memoria al finalizar la operación realizada (no olvidarse de las buenas praticas)
+
+        int *a = (int *)malloc(sizeof(int));
+        if(a==NULL){
+                cout<<"El puntero esta vacio";
+                return -1;
+                };
+
+        cout<<"La direccion de memoria de a es: "<<a<<endl;
+        free(a);
 
 
 
-
-
-
-
+    //Declarar una estructura, asignarle memoria, modificar los valores a través de una función y liberar memoria
+    //Ingresar por teclado 2 números e imprimir el valor y su dirección de memoria
 
 
     return 0;

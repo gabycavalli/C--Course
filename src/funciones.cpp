@@ -209,3 +209,72 @@ int count_words(){
 
 }
 
+void length_of_array(){
+
+string palabra = "hola";
+   int cont = 0;
+     while(palabra[cont]!= 0){
+        cont++;
+   }
+cout<<"El largo del string es: "<<cont<<endl;
+//cout<<"EL LARGO DEL STRING ES: "<<palabra.size()<<endl;
+//cout<<"EL LARGO DEL STRING ES: "<<palabra.length()<<endl;
+
+}
+
+typedef struct{
+    int dni;
+    string nombre;
+    string apellido;
+    int edad;
+    string profesion;
+    string lugar_nacimiento;
+    string direccion;
+    int telefono;
+} Alumno;
+
+void listado_alumnos(){
+
+Alumno alumno[3];
+
+    for(int i=0;i<3;i++){
+
+      cout<<" Va a ingresar los datos del Alumno "<<i+1<<endl;
+      cout<<endl;
+      cout<<"Ingrese nombre del alumno: "<<endl;
+      cin>>alumno[i].nombre;
+      cout<<"Ingrese apellido: "<<endl;
+      cin>>alumno[i].apellido;
+      cout<<"Ingrese DNI: "<<endl;
+      cin>>alumno[i].dni;
+      cout<<"Ingrese EDAD: "<<endl;
+      cin>>alumno[i].edad;
+      cout<<"Ingrese PROFESION: "<<endl;
+      cin>>alumno[i].profesion;
+      cout<<"Ingrese Lugar de Nacimiento: "<<endl;
+      cin>>alumno[i].lugar_nacimiento;
+      cout<<"Ingrese DIRECCION: "<<endl;
+      cin>>alumno[i].direccion;
+      cout<<"Ingrese TELEFONO: "<<endl;
+      cin>>alumno[i].telefono;
+      cout<<endl;
+    }
+
+
+    for(int j=0;j<3;j++){
+      cout<<"Empleado "<<j+1<<endl;
+      cout<<"Nombre: "<<alumno[j].nombre<<endl;
+      cout<<"Apellido: "<<alumno[j].apellido<<endl;
+      cout<<"DNI: "<<alumno[j].dni<<endl;
+      cout<<"EDAD: "<<alumno[j].edad<<endl;
+      cout<<"PROFESION: "<<alumno[j].profesion<<endl;
+      cout<<"L. NAC: "<<alumno[j].lugar_nacimiento<<endl;
+      cout<<"DIRECCION: "<<alumno[j].direccion<<endl;
+      cout<<"TELEFONO: "<<alumno[j].telefono<<endl;
+      cout<<endl;
+    }
+}
+
+
+
+

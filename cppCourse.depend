@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1676846732 source:j:\c++\cppcourse\src\funciones.cpp
+1677468425 source:j:\c++\cppcourse\src\funciones.cpp
 	"../include/funciones.h"
 	<iostream>
 
-1676846537 j:\c++\cppcourse\include\funciones.h
+1677468382 j:\c++\cppcourse\include\funciones.h
 
-1675962464 source:j:\c++\cppcourse\main.cpp
+1677469255 source:j:\c++\cppcourse\main.cpp
 	"include/funciones.h"
 	<iostream>
+	<cstring>
 

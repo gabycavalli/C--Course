@@ -8,3 +8,5 @@ int par_impar();
 int ascending_sort();
 int descending_sort();
 int count_words();
+void length_of_array();
+void listado_alumnos();
