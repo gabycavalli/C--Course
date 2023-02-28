@@ -10,3 +10,5 @@ int descending_sort();
 int count_words();
 void length_of_array();
 void listado_alumnos();
+void print_persona_info();
+void memory_address_numbers();
