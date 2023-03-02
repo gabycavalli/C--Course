@@ -275,8 +275,48 @@ Alumno alumno[3];
     }
 }
 
+typedef struct{
+        string nombre;
+        string apellido;
+        string materia;
+        int nota;
+    }Persona;
 
-    
+void lista_alumnos_aprobados(){
+
+    Persona alumno[3];
+    int apr=0;
+    int desap=0;
+    int total=0;
+
+    for(int i=0;i<3;i++){
+        cout<<"Ingrese nombre del Alumno: "<<endl;
+        cin>>alumno[i].nombre;
+        cout<<"Ingrese apellido del Alumno: "<<endl;
+        cin>>alumno[i].apellido;
+        cout<<"Ingrese Materia: "<<endl;
+        cin>>alumno[i].materia;
+        cout<<"Ingrese nota del Alumno: "<<endl;
+        cin>>alumno[i].nota;
+    }
+
+    for(int j=0;j<3;j++){
+        if (alumno[j].nota < 4){
+        cout<<"El alumno "<<alumno[j].nombre<<" esta DESAPROBADO :-("<<endl;
+        desap++;
+        }else{
+        cout<<"El alumno "<<alumno[j].nombre<<" esta APROBADO :-)"<<endl;
+        apr++;
+        }
+       total++;
+    }
+    cout<<endl;
+    cout<<"El porcentaje de aprobados es: "<<((apr*100)/total)<<"%"<<endl;
+    cout<<"El porcentaje de desaprobados es: "<<((desap*100)/total)<<"%"<<endl;
+}
+
+
+
 
 
 
