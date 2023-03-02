@@ -445,7 +445,7 @@ int main()
     /*34. Desarrolle un arreglo de estructura para un programa que lea una lista de alumnos y las notas correspondientes a una determinada asignatura;
     el resultado será el tanto por ciento(porcentaje) de los alumnos aprobados y reprobados*/
 
-    // lista_alumnos_aprobados();
+     lista_alumnos_aprobados();
 
     /*----PUNTEROS--------*/
     // Imprimir el valor y su dirección de memoria de una variable.
