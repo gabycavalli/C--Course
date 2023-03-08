@@ -569,7 +569,7 @@ int main()
 
         for(int a=0; a<3; a++){
         acum = emp[a].asistencia;
-        acum2 = emp[a].sueldo
+        acum2 = emp[a].sueldo;
         if(emp[a].asistencia<acum && emp[a].sueldo>acum2){
             emp_menos_faltas = emp[a].nombre;
         }
