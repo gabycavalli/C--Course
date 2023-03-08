@@ -440,12 +440,12 @@ int main()
     /*33. Desarrolle una estructura que guarde los datos de los n alumnos de la materia programación en Lenguaje C,
     y los muestres por pantalla, la estructura debe tener (dni, nombre, apellido, edad, profesión, lugar de nacimiento, dirección y teléfono)*/
 
-    // listado_alumnos();
+     // listado_alumnos();
 
     /*34. Desarrolle un arreglo de estructura para un programa que lea una lista de alumnos y las notas correspondientes a una determinada asignatura;
     el resultado será el tanto por ciento(porcentaje) de los alumnos aprobados y reprobados*/
 
-     lista_alumnos_aprobados();
+    // lista_alumnos_aprobados();
 
     /*----PUNTEROS--------*/
     // Imprimir el valor y su dirección de memoria de una variable.
@@ -474,6 +474,107 @@ int main()
     // Ingresar por teclado 2 números e imprimir el valor y su dirección de memoria
 
         // memory_address_numbers();
+
+   // 35 . Inicializar 10 empleados (un empleado tiene, sueldo, impuesto a las ganancias, cuit, dni, bono (dinero que la empresa da para ajustar la inflación), asistencia, nombre y apellido)
+    /*Nota: El impuesto es del 35% en el país
+    se pide:
+    Imprimir el ranking del top 5 de empleados, (los empleados que tiene mayor sueldo)
+    imprimir el empleado del mes (el que más asistencia tiene)
+    imprimir el empleado más pobre (el que menos gana).
+    imprimir el empleado irresponsable (el empleado que más falta tiene)
+    imprimir el empleado estrella, el empleado que no tiene faltas y tiene mayor sueldo
+    La cantidad total que la empresa paga a los empleados
+    La cantidad total de bono que la empresa paga a los empleados
+    El empleado favorito, el favorito es que tiene mayor cantidad de bono
+    El empleado descuidado, empleado que no tiene bono
+    EL empleado que mayor impuesto paga.
+    El impuesto total que recauda el gobierno.
+
+    Nota: se puede hacer el resultado en ambos lenguajes c++ y en javascript, lo ideal sería avanzar hasta donde puedas en c++*/
+
+    typedef struct{
+        string nombre;
+        string apellido;
+        int dni;
+        int asistencia;
+        int sueldo;
+        int retenciones;
+        int bono;
+
+    }Empleado;
+
+    Empleado emp[10];
+    Empleado ranking[5];
+    string emp_mes;
+    string menor_sueldo;
+    string emp_mas_faltas;
+    string emp_menos_faltas;
+    int acum=0;
+    int acum2=0;
+
+    for(int i=0; i<3; i++){
+        cout<<"INGRESE NOMBRE EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].nombre;
+        cout<<"INGRESE APELLIDO EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].apellido;
+        cout<<"INGRESE ASISTENCIA EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].asistencia;
+        cout<<"INGRESE SUELDO EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].sueldo;
+        cout<<"INGRESE RETENCION EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].retenciones;
+        cout<<"INGRESE BONO EMPLEADO "<<i<<":"<<endl;
+        cin>>emp[i].bono;
+    }
+
+    //Imprimir el ranking del top 5 de empleados, (los empleados que tiene mayor sueldo)
+   /* for(int j=0; j<3; j++){
+
+        if(emp[j].sueldo > ranking[j].sueldo){
+            ranking[j+1].sueldo = emp[j].sueldo;
+            }
+        cout<<"Ranking :"<<ranking[j].sueldo<<endl;
+    }*/
+
+     //imprimir el empleado del mes (el que más asistencia tiene)
+
+     for(int h=0; h<3; h++){
+        if(emp[h].asistencia>acum){
+            emp_mes = emp[h].nombre;
+        }
+     }
+     cout<<"El empleado del mes es: "<<emp_mes<<endl;
+
+     //imprimir el empleado más pobre (el que menos gana).
+
+     for(int k=0; k<3; k++){
+        acum = emp[k].sueldo;
+        if(emp[k].sueldo<acum){
+            menor_sueldo = emp[k].nombre;
+        }
+     }
+     cout<<"El empleado con menor sueldo es: "<<menor_sueldo<<" y el sueldo es: "<<acum<<endl;
+
+     //imprimir el empleado irresponsable (el empleado que más falta tiene)
+
+        for(int h=0; h<3; h++){
+        acum = emp[h].asistencia;
+        if(emp[h].asistencia>acum){
+            emp_mas_faltas = emp[h].nombre;
+        }
+     }
+     cout<<"El empleado con mas faltas es: "<<emp_mas_faltas<<endl;
+
+     // imprimir el empleado estrella, el empleado que no tiene faltas y tiene mayor sueldo
+
+        for(int a=0; a<3; a++){
+        acum = emp[a].asistencia;
+        acum2 = emp[a].sueldo
+        if(emp[a].asistencia<acum && emp[a].sueldo>acum2){
+            emp_menos_faltas = emp[a].nombre;
+        }
+     }
+     cout<<"El empleado estrella es: "<<emp_menos_faltas<<endl;
 
     return 0;
 }
