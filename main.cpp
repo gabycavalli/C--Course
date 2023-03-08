@@ -528,13 +528,13 @@ int main()
     }
 
     //Imprimir el ranking del top 5 de empleados, (los empleados que tiene mayor sueldo)
-   /* for(int j=0; j<3; j++){
+   /for(int j=0; j<3; j++){
 
         if(emp[j].sueldo > ranking[j].sueldo){
             ranking[j+1].sueldo = emp[j].sueldo;
             }
         cout<<"Ranking :"<<ranking[j].sueldo<<endl;
-    }*/
+    }
 
      //imprimir el empleado del mes (el que más asistencia tiene)
 
@@ -558,23 +558,34 @@ int main()
      //imprimir el empleado irresponsable (el empleado que más falta tiene)
 
         for(int h=0; h<3; h++){
-        acum = emp[h].asistencia;
-        if(emp[h].asistencia>acum){
-            emp_mas_faltas = emp[h].nombre;
+            acum = emp[h].asistencia;
+                if(emp[h].asistencia>acum){
+                    emp_mas_faltas = emp[h].nombre;
+            }
         }
-     }
      cout<<"El empleado con mas faltas es: "<<emp_mas_faltas<<endl;
 
      // imprimir el empleado estrella, el empleado que no tiene faltas y tiene mayor sueldo
 
         for(int a=0; a<3; a++){
-        acum = emp[a].asistencia;
-        acum2 = emp[a].sueldo;
-        if(emp[a].asistencia<acum && emp[a].sueldo>acum2){
-            emp_menos_faltas = emp[a].nombre;
-        }
-     }
+            acum = emp[a].asistencia;
+            acum2 = emp[a].sueldo;
+                if(emp[a].asistencia<acum && emp[a].sueldo>acum2){
+                    emp_menos_faltas = emp[a].nombre;
+                }
+            }
      cout<<"El empleado estrella es: "<<emp_menos_faltas<<endl;
+
+     //La cantidad total que la empresa paga a los empleados
+
+     for(int b=0;b<3;b++){
+        total_sueldos = total_sueldos + emp[b].sueldos;
+     }
+
+
+
+
+
 
     return 0;
 }
